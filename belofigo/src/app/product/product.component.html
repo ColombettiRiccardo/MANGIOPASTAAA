@@ -1,0 +1,12 @@
+<div>
+    <div *ngIf="product">
+        <h4>{{product.product.product_name}}</h4>
+        <img src="{{product.product.image_front_url}}">
+  
+        <p> <b>Brand:</b> {{product.product.brands_tags[0]}} </p>
+        <p> <b>Categorie:</b> {{product.product.categories}} </p>
+  
+  
+        <p><a href (click)="back()">Back</a></p>
+    </div>
+</div>
